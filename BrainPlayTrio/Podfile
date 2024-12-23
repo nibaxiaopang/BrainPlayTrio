@@ -6,5 +6,6 @@ target 'BrainPlayTrio' do
   use_frameworks!
 
   # Pods for BrainPlayTrio
-
+  pod 'Firebase/Messaging'
+  pod 'AppsFlyerFramework'
 end

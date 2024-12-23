@@ -66,6 +66,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="J96-bL-log"/>
+                    <connections>
+                        <outlet property="playButton" destination="VGy-EB-6kS" id="7Ph-kD-ffT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3A-db-JC6" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,6 +298,9 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="back:" destination="sDb-L8-9Ge" eventType="touchUpInside" id="gJ0-bx-94a"/>
+                                </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="4XB-N1-Yly">
                                 <rect key="frame" x="150" y="274" width="20" height="20"/>
@@ -314,6 +320,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pSD-mO-Nfu"/>
+                    <connections>
+                        <outlet property="backButton" destination="Ml0-8R-zNp" id="gws-lT-XJr"/>
+                        <outlet property="bottomCos" destination="D2R-Lk-5pW" id="QXV-Pk-SJl"/>
+                        <outlet property="brainWebView" destination="q6G-VZ-EhM" id="5uJ-0B-DZL"/>
+                        <outlet property="indicatorView" destination="4XB-N1-Yly" id="KrJ-20-yxM"/>
+                        <outlet property="topCos" destination="Wo9-Tj-TcB" id="y5U-OO-HDI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVb-0j-PqZ" sceneMemberID="firstResponder"/>
             </objects>

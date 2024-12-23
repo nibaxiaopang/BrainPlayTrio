@@ -2,7 +2,7 @@
 //  SlidingPuzzleVC.swift
 //  BrainPlayTrio
 //
-//  Created by jin fu on 2024/12/23.
+//  Created by BrainPlay Trio on 2024/12/23.
 //
 
 
