@@ -1,0 +1,93 @@
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "2Gq-lK-WDx"; */
+"2Gq-lK-WDx.normalTitle" = "2";
+
+/* Class = "UILabel"; text = "BrainPlay Trio"; ObjectID = "8Nk-US-vAw"; */
+"8Nk-US-vAw.text" = "BrainPlay Trio";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "ADX-a0-Hu7"; */
+"ADX-a0-Hu7.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "About Us "; ObjectID = "CNV-46-hGX"; */
+"CNV-46-hGX.text" = "About Us ";
+
+/* Class = "UITextView"; text = "BrainPlay Trio is a captivating gaming app that combines three unique and engaging games—Slide Numbers, Simon Says, and Broken Calculator. Each game is designed to entertain while sharpening critical thinking, memory, and problem-solving skills. With vibrant visuals, intuitive controls, and progressively challenging levels, BrainPlay Trio offers endless fun and cognitive benefits for players of all ages.\n\nHow to Use:\n\t1.\tSelect a Game: Choose from Slide Numbers, Simon Says, or Broken Calculator on the home screen.\n\t2.\tFollow Instructions: Each game provides simple, clear instructions tailored to its unique gameplay.\n\t3.\tPlay and Progress: Solve puzzles, follow sequences, or achieve targets to advance through increasingly challenging levels.\n\t4.\tChallenge Yourself: Replay games to beat your personal bests or try higher difficulty levels for extra excitement.\n\nBenefits:\n\t•\tBoost Cognitive Skills: Improve problem-solving, logical reasoning, and critical thinking.\n\t•\tSharpen Memory and Focus: Strengthen your memory with Simon Says and practice concentration across all games.\n\t•\tLearn Through Play: Develop mathematical and analytical skills in a fun and interactive way with Broken Calculator.\n\t•\tRelax and Enjoy: Immerse yourself in visually appealing, calming gameplay designed to entertain and de-stress.\n\t•\tFamily-Friendly Fun: Perfect for players of all ages, whether solo or enjoying game time with family.\n\nDiscover the perfect balance of fun and mental exercise with BrainPlay Trio. Play today and unlock your potential!"; ObjectID = "Cnz-gA-bks"; */
+"Cnz-gA-bks.text" = "BrainPlay Trio is a captivating gaming app that combines three unique and engaging games—Slide Numbers, Simon Says, and Broken Calculator. Each game is designed to entertain while sharpening critical thinking, memory, and problem-solving skills. With vibrant visuals, intuitive controls, and progressively challenging levels, BrainPlay Trio offers endless fun and cognitive benefits for players of all ages.\n\nHow to Use:\n\t1.\tSelect a Game: Choose from Slide Numbers, Simon Says, or Broken Calculator on the home screen.\n\t2.\tFollow Instructions: Each game provides simple, clear instructions tailored to its unique gameplay.\n\t3.\tPlay and Progress: Solve puzzles, follow sequences, or achieve targets to advance through increasingly challenging levels.\n\t4.\tChallenge Yourself: Replay games to beat your personal bests or try higher difficulty levels for extra excitement.\n\nBenefits:\n\t•\tBoost Cognitive Skills: Improve problem-solving, logical reasoning, and critical thinking.\n\t•\tSharpen Memory and Focus: Strengthen your memory with Simon Says and practice concentration across all games.\n\t•\tLearn Through Play: Develop mathematical and analytical skills in a fun and interactive way with Broken Calculator.\n\t•\tRelax and Enjoy: Immerse yourself in visually appealing, calming gameplay designed to entertain and de-stress.\n\t•\tFamily-Friendly Fun: Perfect for players of all ages, whether solo or enjoying game time with family.\n\nDiscover the perfect balance of fun and mental exercise with BrainPlay Trio. Play today and unlock your potential!";
+
+/* Class = "UIButton"; normalTitle = "Check"; ObjectID = "EAK-7z-9UO"; */
+"EAK-7z-9UO.normalTitle" = "Check";
+
+/* Class = "UIButton"; normalTitle = "/"; ObjectID = "Eeh-OS-fOg"; */
+"Eeh-OS-fOg.normalTitle" = "/";
+
+/* Class = "UILabel"; text = "Simon Says"; ObjectID = "FOw-Vj-dXK"; */
+"FOw-Vj-dXK.text" = "Simon Says";
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "IeU-CA-2MY"; */
+"IeU-CA-2MY.normalTitle" = "Clear";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "KCB-bx-mAr"; */
+"KCB-bx-mAr.normalTitle" = "1";
+
+/* Class = "UIButton"; normalTitle = "Reset Game"; ObjectID = "Ne7-BB-Bna"; */
+"Ne7-BB-Bna.normalTitle" = "Reset Game";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "QtB-7G-fnh"; */
+"QtB-7G-fnh.normalTitle" = "-";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "UpF-is-XZc"; */
+"UpF-is-XZc.normalTitle" = "3";
+
+/* Class = "UIButton"; normalTitle = "Let's Get Started"; ObjectID = "VGy-EB-6kS"; */
+"VGy-EB-6kS.normalTitle" = "Let's Get Started";
+
+/* Class = "UILabel"; text = "Slide Numbers"; ObjectID = "ViG-Un-Yef"; */
+"ViG-Un-Yef.text" = "Slide Numbers";
+
+/* Class = "UIButton"; normalTitle = "*"; ObjectID = "Xh5-Fy-IBa"; */
+"Xh5-Fy-IBa.normalTitle" = "*";
+
+/* Class = "UISegmentedControl"; d9Y-Jk-Yyp.segmentTitles[0] = "0"; ObjectID = "d9Y-Jk-Yyp"; */
+"d9Y-Jk-Yyp.segmentTitles[0]" = "0";
+
+/* Class = "UISegmentedControl"; d9Y-Jk-Yyp.segmentTitles[1] = "3"; ObjectID = "d9Y-Jk-Yyp"; */
+"d9Y-Jk-Yyp.segmentTitles[1]" = "3";
+
+/* Class = "UISegmentedControl"; d9Y-Jk-Yyp.segmentTitles[2] = "4"; ObjectID = "d9Y-Jk-Yyp"; */
+"d9Y-Jk-Yyp.segmentTitles[2]" = "4";
+
+/* Class = "UISegmentedControl"; d9Y-Jk-Yyp.segmentTitles[3] = "5"; ObjectID = "d9Y-Jk-Yyp"; */
+"d9Y-Jk-Yyp.segmentTitles[3]" = "5";
+
+/* Class = "UISegmentedControl"; d9Y-Jk-Yyp.segmentTitles[4] = "6"; ObjectID = "d9Y-Jk-Yyp"; */
+"d9Y-Jk-Yyp.segmentTitles[4]" = "6";
+
+/* Class = "UISegmentedControl"; d9Y-Jk-Yyp.segmentTitles[5] = "7"; ObjectID = "d9Y-Jk-Yyp"; */
+"d9Y-Jk-Yyp.segmentTitles[5]" = "7";
+
+/* Class = "UILabel"; text = "Submit Feedback"; ObjectID = "edy-1w-Jp8"; */
+"edy-1w-Jp8.text" = "Submit Feedback";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "km1-XB-bKc"; */
+"km1-XB-bKc.text" = "Label";
+
+/* Class = "UILabel"; text = "Broken Calculator"; ObjectID = "ldd-iu-l85"; */
+"ldd-iu-l85.text" = "Broken Calculator";
+
+/* Class = "UILabel"; text = "00"; ObjectID = "lvn-xz-k50"; */
+"lvn-xz-k50.text" = "00";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oLh-qW-P8H"; */
+"oLh-qW-P8H.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Submit Feedback"; ObjectID = "roj-r5-p7v"; */
+"roj-r5-p7v.normalTitle" = "Submit Feedback";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "t1Y-xk-NPS"; */
+"t1Y-xk-NPS.text" = "Label";
+
+/* Class = "UILabel"; text = "Select Grid Size"; ObjectID = "vHN-0i-qJf"; */
+"vHN-0i-qJf.text" = "Select Grid Size";
+
+/* Class = "UIButton"; normalTitle = "Start Game"; ObjectID = "zaY-Y1-cww"; */
+"zaY-Y1-cww.normalTitle" = "Start Game";
