@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SimonSaysVC: UIViewController {
+class BrainPlaySimonSaysViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var redButton: UIButton!

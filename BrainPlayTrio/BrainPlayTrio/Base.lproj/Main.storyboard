@@ -88,355 +88,10 @@
             </objects>
             <point key="canvasLocation" x="927" y="-16"/>
         </scene>
-        <!--Broken CalculatorVC-->
-        <scene sceneID="sYW-Ae-XYl">
-            <objects>
-                <viewController storyboardIdentifier="BrokenCalculatorVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vtF-ma-m7M" customClass="BrokenCalculatorVC" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sVt-pr-FT2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="IIa-Wr-Guy">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1H-iT-DUT">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="110.5"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_top_view" translatesAutoresizingMaskIntoConstraints="NO" id="twK-cE-ZCd">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="110.5"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broken Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILs-nD-cqh">
-                                        <rect key="frame" x="100" y="46" width="120" height="62.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="Iip-Zr-ThZ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
-                                        <color key="textColor" name="appColor_black"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCj-oK-PJA">
-                                        <rect key="frame" x="24" y="46" width="44" height="44"/>
-                                        <color key="backgroundColor" name="appColor_black"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="RXO-Kh-Fa9"/>
-                                            <constraint firstAttribute="width" constant="44" id="pEF-SM-3ii"/>
-                                        </constraints>
-                                        <color key="tintColor" name="appColor_white"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal">
-                                            <imageReference key="image" image="arrowshape.backward.fill" catalog="system" symbolScale="large"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="btnBack:" destination="vtF-ma-m7M" eventType="touchUpInside" id="eVt-G5-WNR"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uf8-XT-Wtp">
-                                        <rect key="frame" x="240.5" y="46" width="55.5" height="31.5"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
-                                        <color key="textColor" name="appColor_black"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="twK-cE-ZCd" secondAttribute="trailing" id="2Om-2O-JP9"/>
-                                    <constraint firstItem="uf8-XT-Wtp" firstAttribute="top" secondItem="ILs-nD-cqh" secondAttribute="top" id="AIg-fh-kxX"/>
-                                    <constraint firstItem="ILs-nD-cqh" firstAttribute="centerX" secondItem="e1H-iT-DUT" secondAttribute="centerX" id="Ctd-yZ-Uh5"/>
-                                    <constraint firstAttribute="trailing" secondItem="uf8-XT-Wtp" secondAttribute="trailing" constant="24" id="Igw-NK-gZC"/>
-                                    <constraint firstAttribute="width" secondItem="e1H-iT-DUT" secondAttribute="height" multiplier="2.90041" id="P2H-cj-h6a"/>
-                                    <constraint firstItem="twK-cE-ZCd" firstAttribute="top" secondItem="e1H-iT-DUT" secondAttribute="top" id="bvc-Qf-Nfd"/>
-                                    <constraint firstAttribute="bottom" secondItem="twK-cE-ZCd" secondAttribute="bottom" id="cGN-Gh-D8a"/>
-                                    <constraint firstItem="oCj-oK-PJA" firstAttribute="top" secondItem="ILs-nD-cqh" secondAttribute="top" id="kbz-Nt-sai"/>
-                                    <constraint firstItem="twK-cE-ZCd" firstAttribute="leading" secondItem="e1H-iT-DUT" secondAttribute="leading" id="lNm-Zf-n9d"/>
-                                    <constraint firstItem="ILs-nD-cqh" firstAttribute="centerY" secondItem="e1H-iT-DUT" secondAttribute="centerY" multiplier="1.4" id="rCZ-ML-86N"/>
-                                    <constraint firstItem="oCj-oK-PJA" firstAttribute="leading" secondItem="e1H-iT-DUT" secondAttribute="leading" constant="24" id="rZL-G6-JUL"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErC-6K-Rv3">
-                                <rect key="frame" x="24" y="124.5" width="272" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="K5W-b1-d2n"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
-                                <color key="textColor" name="appColor_white"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53f-wp-oby">
-                                <rect key="frame" x="24" y="194.5" width="272" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="A6o-wf-iJZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
-                                <color key="textColor" name="appColor_white"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQy-B1-TjX">
-                                <rect key="frame" x="24" y="274.5" width="272" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="hII-4N-Y9A"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
-                                <color key="textColor" name="appColor_white"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zGU-OT-hTh">
-                                <rect key="frame" x="24" y="354.5" width="272" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abj-8V-51x">
-                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="50"/>
-                                        <color key="backgroundColor" name="appColor_white"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="1">
-                                            <color key="titleColor" name="appColor_black"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="numberButtonTapped:" destination="vtF-ma-m7M" eventType="touchUpInside" id="TZP-s6-Z0U"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVd-HL-dA0">
-                                        <rect key="frame" x="92.5" y="0.0" width="87" height="50"/>
-                                        <color key="backgroundColor" name="appColor_white"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="2">
-                                            <color key="titleColor" name="appColor_black"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="numberButtonTapped:" destination="vtF-ma-m7M" eventType="touchUpInside" id="ACY-cm-4os"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzz-YE-fNr">
-                                        <rect key="frame" x="184.5" y="0.0" width="87.5" height="50"/>
-                                        <color key="backgroundColor" name="appColor_white"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="3">
-                                            <color key="titleColor" name="appColor_black"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="clickNumAction:" destination="vtF-ma-m7M" eventType="touchUpInside" id="q5h-09-jCv"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="5nH-Gn-5ZK"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qUf-MI-9ZA">
-                                <rect key="frame" x="24" y="428.5" width="272" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4a-qp-wWp">
-                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="50"/>
-                                        <color key="backgroundColor" name="appColor_white"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" name="appColor_black"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="operationButtonTapped:" destination="vtF-ma-m7M" eventType="touchUpInside" id="mwf-la-rAB"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u04-pF-2VB">
-                                        <rect key="frame" x="69.5" y="0.0" width="64" height="50"/>
-                                        <color key="backgroundColor" name="appColor_white"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="-">
-                                            <color key="titleColor" name="appColor_black"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="operationButtonTapped:" destination="vtF-ma-m7M" eventType="touchUpInside" id="FYh-FN-XPR"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo1-vj-eRq">
-                                        <rect key="frame" x="138.5" y="0.0" width="64.5" height="50"/>
-                                        <color key="backgroundColor" name="appColor_white"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="*">
-                                            <color key="titleColor" name="appColor_black"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="operationButtonTapped:" destination="vtF-ma-m7M" eventType="touchUpInside" id="rZf-BR-hh1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFf-cV-Zv2">
-                                        <rect key="frame" x="208" y="0.0" width="64" height="50"/>
-                                        <color key="backgroundColor" name="appColor_white"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="/">
-                                            <color key="titleColor" name="appColor_black"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="operationButtonTapped:" destination="vtF-ma-m7M" eventType="touchUpInside" id="Z0t-Oy-sc0"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="EUy-yD-gRz"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RIg-3h-CB8">
-                                <rect key="frame" x="24" y="502.5" width="272" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRy-IS-YgU">
-                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="50"/>
-                                        <color key="backgroundColor" name="appColor_white"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Clear">
-                                            <color key="titleColor" name="appColor_black"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="clearButtonTapped:" destination="vtF-ma-m7M" eventType="touchUpInside" id="7Yb-lo-2tQ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz0-ku-lK6">
-                                        <rect key="frame" x="138.5" y="0.0" width="133.5" height="50"/>
-                                        <color key="backgroundColor" name="appColor_white"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Check">
-                                            <color key="titleColor" name="appColor_black"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="evaluateExpression:" destination="vtF-ma-m7M" eventType="touchUpInside" id="HP5-LN-K0p"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0La-a7-krA"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOf-0U-NpO">
-                                <rect key="frame" x="24" y="500" width="272" height="44"/>
-                                <color key="backgroundColor" name="appColor_white"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Reset Game">
-                                    <color key="titleColor" name="appColor_black"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="resetButtonTapped:" destination="vtF-ma-m7M" eventType="touchUpInside" id="ytO-q8-osR"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="yM5-lk-meI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="yM5-lk-meI" firstAttribute="trailing" secondItem="RIg-3h-CB8" secondAttribute="trailing" constant="24" id="6dE-yT-2zF"/>
-                            <constraint firstAttribute="trailing" secondItem="IIa-Wr-Guy" secondAttribute="trailing" id="A8h-j5-KwX"/>
-                            <constraint firstItem="zGU-OT-hTh" firstAttribute="leading" secondItem="yM5-lk-meI" secondAttribute="leading" constant="24" id="AmK-P5-6U2"/>
-                            <constraint firstItem="dQy-B1-TjX" firstAttribute="leading" secondItem="yM5-lk-meI" secondAttribute="leading" constant="24" id="Bfp-NR-ws7"/>
-                            <constraint firstItem="yM5-lk-meI" firstAttribute="trailing" secondItem="53f-wp-oby" secondAttribute="trailing" constant="24" id="DPl-k8-Jf8"/>
-                            <constraint firstItem="IIa-Wr-Guy" firstAttribute="leading" secondItem="sVt-pr-FT2" secondAttribute="leading" id="EQg-3k-tQb"/>
-                            <constraint firstItem="RIg-3h-CB8" firstAttribute="top" secondItem="qUf-MI-9ZA" secondAttribute="bottom" constant="24" id="FoB-SS-VRE"/>
-                            <constraint firstItem="yM5-lk-meI" firstAttribute="trailing" secondItem="dQy-B1-TjX" secondAttribute="trailing" constant="24" id="HEe-3T-HUC"/>
-                            <constraint firstItem="53f-wp-oby" firstAttribute="top" secondItem="ErC-6K-Rv3" secondAttribute="bottom" constant="14" id="JhB-G1-UOn"/>
-                            <constraint firstItem="yM5-lk-meI" firstAttribute="trailing" secondItem="zGU-OT-hTh" secondAttribute="trailing" constant="24" id="LDF-mf-gGC"/>
-                            <constraint firstAttribute="trailing" secondItem="e1H-iT-DUT" secondAttribute="trailing" id="MeG-98-SZP"/>
-                            <constraint firstItem="e1H-iT-DUT" firstAttribute="top" secondItem="sVt-pr-FT2" secondAttribute="top" id="VCF-Y3-NiY"/>
-                            <constraint firstItem="IIa-Wr-Guy" firstAttribute="top" secondItem="sVt-pr-FT2" secondAttribute="top" id="X1f-9D-pMJ"/>
-                            <constraint firstItem="qUf-MI-9ZA" firstAttribute="top" secondItem="zGU-OT-hTh" secondAttribute="bottom" constant="24" id="Ymx-bn-aZD"/>
-                            <constraint firstAttribute="bottom" secondItem="IIa-Wr-Guy" secondAttribute="bottom" id="Zdz-ml-Idf"/>
-                            <constraint firstItem="yM5-lk-meI" firstAttribute="trailing" secondItem="VOf-0U-NpO" secondAttribute="trailing" constant="24" id="bjD-dj-8mQ"/>
-                            <constraint firstItem="dQy-B1-TjX" firstAttribute="top" secondItem="53f-wp-oby" secondAttribute="bottom" constant="24" id="cN3-lb-733"/>
-                            <constraint firstItem="yM5-lk-meI" firstAttribute="trailing" secondItem="ErC-6K-Rv3" secondAttribute="trailing" constant="24" id="jJX-id-8nV"/>
-                            <constraint firstItem="ErC-6K-Rv3" firstAttribute="top" secondItem="e1H-iT-DUT" secondAttribute="bottom" constant="14" id="jLr-BV-qfF"/>
-                            <constraint firstItem="RIg-3h-CB8" firstAttribute="leading" secondItem="yM5-lk-meI" secondAttribute="leading" constant="24" id="jmv-NG-hfh"/>
-                            <constraint firstItem="zGU-OT-hTh" firstAttribute="top" secondItem="dQy-B1-TjX" secondAttribute="bottom" constant="24" id="kMZ-Sf-GBw"/>
-                            <constraint firstItem="qUf-MI-9ZA" firstAttribute="leading" secondItem="yM5-lk-meI" secondAttribute="leading" constant="24" id="lPp-el-xi4"/>
-                            <constraint firstItem="e1H-iT-DUT" firstAttribute="leading" secondItem="yM5-lk-meI" secondAttribute="leading" id="oET-II-2lZ"/>
-                            <constraint firstItem="VOf-0U-NpO" firstAttribute="leading" secondItem="yM5-lk-meI" secondAttribute="leading" constant="24" id="qTw-pA-OFH"/>
-                            <constraint firstItem="ErC-6K-Rv3" firstAttribute="leading" secondItem="yM5-lk-meI" secondAttribute="leading" constant="24" id="tX3-lj-ez7"/>
-                            <constraint firstItem="53f-wp-oby" firstAttribute="leading" secondItem="yM5-lk-meI" secondAttribute="leading" constant="24" id="uMJ-zV-muS"/>
-                            <constraint firstItem="yM5-lk-meI" firstAttribute="trailing" secondItem="qUf-MI-9ZA" secondAttribute="trailing" constant="24" id="vzh-fL-AuW"/>
-                            <constraint firstItem="yM5-lk-meI" firstAttribute="bottom" secondItem="VOf-0U-NpO" secondAttribute="bottom" constant="24" id="yEa-wp-GHN"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="43y-09-C1m"/>
-                    <connections>
-                        <outlet property="button1" destination="abj-8V-51x" id="SJG-ZN-fhc"/>
-                        <outlet property="button2" destination="IVd-HL-dA0" id="nEO-ki-qUO"/>
-                        <outlet property="button3" destination="Lzz-YE-fNr" id="xK1-7q-dgm"/>
-                        <outlet property="buttonAdd" destination="R4a-qp-wWp" id="THb-Kc-dRQ"/>
-                        <outlet property="buttonClear" destination="bRy-IS-YgU" id="aWM-kn-sBF"/>
-                        <outlet property="buttonDivide" destination="uFf-cV-Zv2" id="fDl-QT-IWU"/>
-                        <outlet property="buttonEvaluate" destination="Tz0-ku-lK6" id="gK4-6X-f7c"/>
-                        <outlet property="buttonMultiply" destination="yo1-vj-eRq" id="KDb-Wp-cM0"/>
-                        <outlet property="buttonSubtract" destination="u04-pF-2VB" id="aEd-nN-PvR"/>
-                        <outlet property="currentNumberLabel" destination="53f-wp-oby" id="xHs-aU-UpK"/>
-                        <outlet property="resultLabel" destination="dQy-B1-TjX" id="reK-KY-TbN"/>
-                        <outlet property="targetLabel" destination="ErC-6K-Rv3" id="fbJ-R9-ZvJ"/>
-                        <outlet property="timerLabel" destination="uf8-XT-Wtp" id="xRK-Sv-Pvu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yru-pn-kWy" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4292" y="-6"/>
-        </scene>
-        <!--FeedbackVC-->
+        <!--Brain Play Feedback View Controller-->
         <scene sceneID="8g8-OX-vfo">
             <objects>
-                <viewController storyboardIdentifier="FeedbackVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eer-O7-jcl" customClass="FeedbackVC" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedbackVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eer-O7-jcl" customClass="BrainPlayFeedbackViewController" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TYn-uq-Cua">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -664,10 +319,10 @@
             </objects>
             <point key="canvasLocation" x="1673" y="-663"/>
         </scene>
-        <!--AboutVC-->
+        <!--Brain Play About View Controller-->
         <scene sceneID="NJg-Vf-N4Y">
             <objects>
-                <viewController storyboardIdentifier="AboutVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RSQ-9S-445" customClass="AboutVC" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RSQ-9S-445" customClass="BrainPlayAboutViewController" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sYe-Ep-5mw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -749,7 +404,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cnz-gA-bks">
                                 <rect key="frame" x="24" y="134.5" width="272" height="409.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.79881376380000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">BrainPlay Trio is a captivating gaming app that combines three unique and engaging games—Slide Numbers, Simon Says, and Broken Calculator. Each game is designed to entertain while sharpening critical thinking, memory, and problem-solving skills. With vibrant visuals, intuitive controls, and progressively challenging levels, BrainPlay Trio offers endless fun and cognitive benefits for players of all ages.
+                                <string key="text">BrainPlay Trio is a captivating gaming app that combines three unique and engaging games—Slide Numbers, Simon Says, and Broken Calculator. Each game is designed to entertain while sharpening critical thinking, memory, and problem-solving skills. With vibrant visuals, intuitive controls, and progressively challenging levels, BrainPlay Trio offers endless fun and cognitive benefits for players of all ages.
 
 How to Use:
 	1.	Select a Game: Choose from Slide Numbers, Simon Says, or Broken Calculator on the home screen.
@@ -764,7 +419,7 @@ Benefits:
 	•	Relax and Enjoy: Immerse yourself in visually appealing, calming gameplay designed to entertain and de-stress.
 	•	Family-Friendly Fun: Perfect for players of all ages, whether solo or enjoying game time with family.
 
-Discover the perfect balance of fun and mental exercise with BrainPlay Trio. Play today and unlock your potential!</mutableString>
+Discover the perfect balance of fun and mental exercise with BrainPlay Trio. Play today and unlock your potential!</string>
                                 <color key="textColor" name="appColor_black"/>
                                 <fontDescription key="fontDescription" name="STIXTwoText_SemiBold" family="STIX Two Text" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -797,10 +452,10 @@ Discover the perfect balance of fun and mental exercise with BrainPlay Trio. Pla
             </objects>
             <point key="canvasLocation" x="2341" y="-663"/>
         </scene>
-        <!--View Controller-->
+        <!--Brain Playselect View Controller-->
         <scene sceneID="WnL-Wc-IG2">
             <objects>
-                <viewController id="7t7-Ge-6se" customClass="ViewController" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7t7-Ge-6se" customClass="BrainPlayselectViewController" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0nc-wq-8AI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -886,7 +541,7 @@ Discover the perfect balance of fun and mental exercise with BrainPlay Trio. Pla
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="ic_home_3"/>
                                                 <connections>
-                                                    <segue destination="vtF-ma-m7M" kind="show" id="VuY-4g-2Wf"/>
+                                                    <segue destination="Vah-Ye-9D7" kind="push" id="Fbi-CE-31a"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhP-nt-cVU">
@@ -923,10 +578,10 @@ Discover the perfect balance of fun and mental exercise with BrainPlay Trio. Pla
             </objects>
             <point key="canvasLocation" x="2341" y="-7"/>
         </scene>
-        <!--Simon SaysVC-->
+        <!--Brain Play Simon Says View Controller-->
         <scene sceneID="6Or-Xb-oum">
             <objects>
-                <viewController storyboardIdentifier="SimonSaysVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f6Q-id-6i2" customClass="SimonSaysVC" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SimonSaysVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f6Q-id-6i2" customClass="BrainPlaySimonSaysViewController" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gi3-Ud-JEE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1141,10 +796,10 @@ Discover the perfect balance of fun and mental exercise with BrainPlay Trio. Pla
             </objects>
             <point key="canvasLocation" x="3651" y="-6"/>
         </scene>
-        <!--Sliding PuzzleVC-->
+        <!--Brain Play Sliding Puzzle View Controller-->
         <scene sceneID="kTa-dm-SPL">
             <objects>
-                <viewController storyboardIdentifier="SlidingPuzzleVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="faa-c9-N1e" customClass="SlidingPuzzleVC" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SlidingPuzzleVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="faa-c9-N1e" customClass="BrainPlaySlidingPuzzleViewController" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m01-aT-CIG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1313,6 +968,351 @@ Discover the perfect balance of fun and mental exercise with BrainPlay Trio. Pla
                 <placeholder placeholderIdentifier="IBFirstResponder" id="848-Yh-wMZ" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3016" y="-7"/>
+        </scene>
+        <!--Brain Play Broken Calculator View Cobtroller-->
+        <scene sceneID="zaU-83-0Ve">
+            <objects>
+                <viewController storyboardIdentifier="BrokenCalculatorVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vah-Ye-9D7" customClass="BrainPlayBrokenCalculatorViewCobtroller" customModule="BrainPlayTrio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gn4-JI-qeC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="af9-Hm-ccI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqG-ul-gTi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="110.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_top_view" translatesAutoresizingMaskIntoConstraints="NO" id="y2V-Tn-OPF">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="110.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broken Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldd-iu-l85">
+                                        <rect key="frame" x="100" y="46" width="120" height="62.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="fun-Uo-tIi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <color key="textColor" name="appColor_black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-2y-BSZ">
+                                        <rect key="frame" x="24" y="46" width="44" height="44"/>
+                                        <color key="backgroundColor" name="appColor_black"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="F2M-SA-5Ts"/>
+                                            <constraint firstAttribute="width" constant="44" id="YPj-Gk-oOx"/>
+                                        </constraints>
+                                        <color key="tintColor" name="appColor_white"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="arrowshape.backward.fill" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnBack:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="xwW-OQ-V4r"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0R-IY-j02">
+                                        <rect key="frame" x="296" y="46" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <color key="textColor" name="appColor_black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ldd-iu-l85" firstAttribute="centerY" secondItem="hqG-ul-gTi" secondAttribute="centerY" multiplier="1.4" id="1mt-4q-km2"/>
+                                    <constraint firstItem="y2V-Tn-OPF" firstAttribute="leading" secondItem="hqG-ul-gTi" secondAttribute="leading" id="2us-E8-Nfx"/>
+                                    <constraint firstItem="ldd-iu-l85" firstAttribute="centerX" secondItem="hqG-ul-gTi" secondAttribute="centerX" id="CEw-La-unU"/>
+                                    <constraint firstAttribute="trailing" secondItem="i0R-IY-j02" secondAttribute="trailing" constant="24" id="FNY-Sx-QeP"/>
+                                    <constraint firstAttribute="trailing" secondItem="y2V-Tn-OPF" secondAttribute="trailing" id="IaB-Rh-XO7"/>
+                                    <constraint firstItem="y2V-Tn-OPF" firstAttribute="top" secondItem="hqG-ul-gTi" secondAttribute="top" id="TdB-Ih-X8s"/>
+                                    <constraint firstItem="v9J-2y-BSZ" firstAttribute="leading" secondItem="hqG-ul-gTi" secondAttribute="leading" constant="24" id="YFt-4s-WYf"/>
+                                    <constraint firstItem="v9J-2y-BSZ" firstAttribute="top" secondItem="ldd-iu-l85" secondAttribute="top" id="cUr-a6-GBk"/>
+                                    <constraint firstAttribute="width" secondItem="hqG-ul-gTi" secondAttribute="height" multiplier="2.90041" id="hDN-GK-od1"/>
+                                    <constraint firstAttribute="bottom" secondItem="y2V-Tn-OPF" secondAttribute="bottom" id="mdy-cs-nJ7"/>
+                                    <constraint firstItem="i0R-IY-j02" firstAttribute="top" secondItem="ldd-iu-l85" secondAttribute="top" id="omz-n1-Km9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLh-qW-P8H">
+                                <rect key="frame" x="24" y="120.5" width="272" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="AW2-X8-mea"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="km1-XB-bKc">
+                                <rect key="frame" x="24" y="190.5" width="272" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="ft4-Jp-jyD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1Y-xk-NPS">
+                                <rect key="frame" x="24" y="270.5" width="272" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Jz2-IF-HRa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" name="appColor_white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ory-Wm-LVB">
+                                <rect key="frame" x="24" y="350.5" width="272" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCB-bx-mAr">
+                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="50"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" name="appColor_black"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="PR5-he-XfM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gq-lK-WDx">
+                                        <rect key="frame" x="92.5" y="0.0" width="87" height="50"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" name="appColor_black"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="HBz-fe-jYF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpF-is-XZc">
+                                        <rect key="frame" x="184.5" y="0.0" width="87.5" height="50"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" name="appColor_black"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="H6r-r4-vvX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vRC-GT-hQY"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DxT-i9-EsC">
+                                <rect key="frame" x="24" y="424.5" width="272" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADX-a0-Hu7">
+                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="50"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" name="appColor_black"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="operationButtonTapped:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="pQv-Om-epU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtB-7G-fnh">
+                                        <rect key="frame" x="69.5" y="0.0" width="64" height="50"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" name="appColor_black"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="operationButtonTapped:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="xwr-CX-bob"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xh5-Fy-IBa">
+                                        <rect key="frame" x="138.5" y="0.0" width="64.5" height="50"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="*">
+                                            <color key="titleColor" name="appColor_black"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="operationButtonTapped:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="pxp-Ou-SpL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eeh-OS-fOg">
+                                        <rect key="frame" x="208" y="0.0" width="64" height="50"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="/">
+                                            <color key="titleColor" name="appColor_black"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="operationButtonTapped:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="4wv-Dk-tef"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mDe-YM-5pE"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9U7-iT-0SH">
+                                <rect key="frame" x="24" y="498.5" width="272" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeU-CA-2MY">
+                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="50"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" name="appColor_black"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clearButtonTapped:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="Pas-fo-BY6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAK-7z-9UO">
+                                        <rect key="frame" x="138.5" y="0.0" width="133.5" height="50"/>
+                                        <color key="backgroundColor" name="appColor_white"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Check">
+                                            <color key="titleColor" name="appColor_black"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="evaluateExpression:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="9kJ-e6-ZID"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KFp-ah-TM6"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-BB-Bna">
+                                <rect key="frame" x="24" y="500" width="272" height="44"/>
+                                <color key="backgroundColor" name="appColor_white"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Reset Game">
+                                    <color key="titleColor" name="appColor_black"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="Vah-Ye-9D7" eventType="touchUpInside" id="atJ-0S-3qO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AbG-lF-HtW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AbG-lF-HtW" firstAttribute="trailing" secondItem="DxT-i9-EsC" secondAttribute="trailing" constant="24" id="5ud-N2-f2a"/>
+                            <constraint firstItem="af9-Hm-ccI" firstAttribute="leading" secondItem="Gn4-JI-qeC" secondAttribute="leading" id="7td-R9-jiP"/>
+                            <constraint firstItem="Ory-Wm-LVB" firstAttribute="top" secondItem="t1Y-xk-NPS" secondAttribute="bottom" constant="24" id="8BN-fn-kFj"/>
+                            <constraint firstItem="t1Y-xk-NPS" firstAttribute="top" secondItem="km1-XB-bKc" secondAttribute="bottom" constant="24" id="8Cg-QK-yEP"/>
+                            <constraint firstItem="AbG-lF-HtW" firstAttribute="trailing" secondItem="t1Y-xk-NPS" secondAttribute="trailing" constant="24" id="AvP-AM-cP7"/>
+                            <constraint firstItem="Ory-Wm-LVB" firstAttribute="leading" secondItem="AbG-lF-HtW" secondAttribute="leading" constant="24" id="C1M-N3-DGA"/>
+                            <constraint firstItem="AbG-lF-HtW" firstAttribute="trailing" secondItem="Ne7-BB-Bna" secondAttribute="trailing" constant="24" id="ELg-fM-Ox7"/>
+                            <constraint firstItem="oLh-qW-P8H" firstAttribute="top" secondItem="hqG-ul-gTi" secondAttribute="bottom" constant="10" id="ITe-9X-hve"/>
+                            <constraint firstAttribute="trailing" secondItem="hqG-ul-gTi" secondAttribute="trailing" id="JeY-NM-2ur"/>
+                            <constraint firstItem="9U7-iT-0SH" firstAttribute="leading" secondItem="AbG-lF-HtW" secondAttribute="leading" constant="24" id="Pc5-9N-JaT"/>
+                            <constraint firstItem="km1-XB-bKc" firstAttribute="leading" secondItem="AbG-lF-HtW" secondAttribute="leading" constant="24" id="TBg-mk-2Ix"/>
+                            <constraint firstAttribute="bottom" secondItem="af9-Hm-ccI" secondAttribute="bottom" id="TbP-r4-7Sa"/>
+                            <constraint firstItem="t1Y-xk-NPS" firstAttribute="leading" secondItem="AbG-lF-HtW" secondAttribute="leading" constant="24" id="UJ0-9J-wz2"/>
+                            <constraint firstItem="Ne7-BB-Bna" firstAttribute="leading" secondItem="AbG-lF-HtW" secondAttribute="leading" constant="24" id="URg-BF-gOs"/>
+                            <constraint firstItem="hqG-ul-gTi" firstAttribute="leading" secondItem="AbG-lF-HtW" secondAttribute="leading" id="VSg-f6-a8m"/>
+                            <constraint firstItem="DxT-i9-EsC" firstAttribute="top" secondItem="Ory-Wm-LVB" secondAttribute="bottom" constant="24" id="XSR-Sv-orU"/>
+                            <constraint firstItem="AbG-lF-HtW" firstAttribute="trailing" secondItem="9U7-iT-0SH" secondAttribute="trailing" constant="24" id="XcE-De-bjU"/>
+                            <constraint firstItem="DxT-i9-EsC" firstAttribute="leading" secondItem="AbG-lF-HtW" secondAttribute="leading" constant="24" id="YrN-qs-qKe"/>
+                            <constraint firstItem="oLh-qW-P8H" firstAttribute="leading" secondItem="AbG-lF-HtW" secondAttribute="leading" constant="24" id="dMC-G1-2m6"/>
+                            <constraint firstItem="km1-XB-bKc" firstAttribute="top" secondItem="oLh-qW-P8H" secondAttribute="bottom" constant="14" id="fHq-wJ-tgG"/>
+                            <constraint firstAttribute="trailing" secondItem="af9-Hm-ccI" secondAttribute="trailing" id="jz6-SG-llK"/>
+                            <constraint firstItem="AbG-lF-HtW" firstAttribute="bottom" secondItem="Ne7-BB-Bna" secondAttribute="bottom" constant="24" id="l15-N6-t1W"/>
+                            <constraint firstItem="hqG-ul-gTi" firstAttribute="top" secondItem="Gn4-JI-qeC" secondAttribute="top" id="lII-2I-f7G"/>
+                            <constraint firstItem="af9-Hm-ccI" firstAttribute="top" secondItem="Gn4-JI-qeC" secondAttribute="top" id="oAV-zY-Pxe"/>
+                            <constraint firstItem="AbG-lF-HtW" firstAttribute="trailing" secondItem="Ory-Wm-LVB" secondAttribute="trailing" constant="24" id="uL9-bE-cUU"/>
+                            <constraint firstItem="AbG-lF-HtW" firstAttribute="trailing" secondItem="oLh-qW-P8H" secondAttribute="trailing" constant="24" id="xL8-90-nCK"/>
+                            <constraint firstItem="AbG-lF-HtW" firstAttribute="trailing" secondItem="km1-XB-bKc" secondAttribute="trailing" constant="24" id="xae-9v-X1A"/>
+                            <constraint firstItem="9U7-iT-0SH" firstAttribute="top" secondItem="DxT-i9-EsC" secondAttribute="bottom" constant="24" id="ymC-2M-dgW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EwX-uB-Cku"/>
+                    <connections>
+                        <outlet property="button1" destination="KCB-bx-mAr" id="plc-N6-Wen"/>
+                        <outlet property="button2" destination="2Gq-lK-WDx" id="wPU-wv-owy"/>
+                        <outlet property="button3" destination="UpF-is-XZc" id="oMa-Vb-vsj"/>
+                        <outlet property="buttonAdd" destination="ADX-a0-Hu7" id="Obv-fT-bL7"/>
+                        <outlet property="buttonClear" destination="IeU-CA-2MY" id="lh5-pS-NHY"/>
+                        <outlet property="buttonDivide" destination="Eeh-OS-fOg" id="Dk7-wb-gqN"/>
+                        <outlet property="buttonEvaluate" destination="EAK-7z-9UO" id="xga-aI-Q5e"/>
+                        <outlet property="buttonMultiply" destination="Xh5-Fy-IBa" id="SCO-bU-ns3"/>
+                        <outlet property="buttonSubtract" destination="QtB-7G-fnh" id="Noq-wN-fy6"/>
+                        <outlet property="currentNumberLabel" destination="km1-XB-bKc" id="MtP-Je-hOT"/>
+                        <outlet property="resultLabel" destination="t1Y-xk-NPS" id="WPz-BV-oC2"/>
+                        <outlet property="targetLabel" destination="oLh-qW-P8H" id="VDn-An-Lt7"/>
+                        <outlet property="timerLabel" destination="i0R-IY-j02" id="fNw-y6-XIq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ok3-ny-0Ba" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="740"/>
         </scene>
     </scenes>
     <resources>

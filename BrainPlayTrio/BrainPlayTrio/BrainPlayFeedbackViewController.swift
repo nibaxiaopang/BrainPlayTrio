@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedbackVC: UIViewController {
+class BrainPlayFeedbackViewController: UIViewController {
 
     //MARK: - Declare IBOutlet
     @IBOutlet weak var stackView: UIStackView!
@@ -111,9 +111,9 @@ class FeedbackVC: UIViewController {
         
         if isStarSelected {
             clearAllStars()
-            Utils.showAlert(title: "Thanks for feedback", message: "Your feedback added successfully", from: self)
+            BrainPlayAlterUtils.showAlert(title: "Thanks for feedback", message: "Your feedback added successfully", from: self)
         } else {
-            Utils.showAlert(title: "No Selection", message: "Please select a rating before submitting.", from: self)
+            BrainPlayAlterUtils.showAlert(title: "No Selection", message: "Please select a rating before submitting.", from: self)
         }
     }
     

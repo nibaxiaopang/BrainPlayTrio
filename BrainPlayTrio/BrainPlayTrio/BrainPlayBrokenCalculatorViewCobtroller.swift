@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BrokenCalculatorVC: UIViewController {
+class BrainPlayBrokenCalculatorViewCobtroller: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var targetLabel: UILabel!
@@ -34,7 +34,7 @@ class BrokenCalculatorVC: UIViewController {
     private var timer: Timer?
     private var timeRemaining = 0
 
-    private var levels: [GameLevel] = []
+    private var levels: [BrainPlayGameLevel] = []
     private var currentLevelIndex = 0
 
     override func viewDidLoad() {
@@ -46,9 +46,9 @@ class BrokenCalculatorVC: UIViewController {
     // MARK: - Game Setup
     private func setupLevels() {
         levels = [
-            GameLevel(targetNumber: 6, allowedButtons: [button1, button2, buttonAdd, buttonMultiply], timer: 30),
-            GameLevel(targetNumber: 24, allowedButtons: [button2, button3, buttonMultiply, buttonSubtract], timer: 30),
-            GameLevel(targetNumber: 50, allowedButtons: [button1, button3, buttonAdd, buttonMultiply], timer: 40),
+            BrainPlayGameLevel(targetNumber: 6, allowedButtons: [button1, button2, buttonAdd, buttonMultiply], timer: 30),
+            BrainPlayGameLevel(targetNumber: 24, allowedButtons: [button2, button3, buttonMultiply, buttonSubtract], timer: 30),
+            BrainPlayGameLevel(targetNumber: 50, allowedButtons: [button1, button3, buttonAdd, buttonMultiply], timer: 40),
             // Add more levels as needed
         ]
     }
@@ -76,13 +76,16 @@ class BrokenCalculatorVC: UIViewController {
 
     private func enableAllowedButtons() {
         let allButtons = [button1, button2, button3, buttonAdd, buttonSubtract, buttonMultiply, buttonDivide, buttonClear]
-        allButtons.forEach { $0?.isEnabled = false }
+        allButtons.forEach { $0?.isEnabled = true }
         allowedOperations.forEach { $0.isEnabled = true }
+        allowedOperations.forEach { $0.alpha = 1.0 }
+
     }
 
     private func disableAllButtons() {
         let allButtons = [button1, button2, button3, buttonAdd, buttonSubtract, buttonMultiply, buttonDivide, buttonClear]
         allButtons.forEach { $0?.isEnabled = false }
+        allButtons.forEach { $0?.alpha = 0.1 }
     }
 
     // MARK: - Timer
@@ -113,12 +116,6 @@ class BrokenCalculatorVC: UIViewController {
         currentNumberLabel.text = "Current: \(currentExpression)"
     }
 
-    @IBAction func clickNumAction(_ sender: UIButton) {
-        guard let buttonText = sender.titleLabel?.text else { return }
-        currentExpression += buttonText
-        currentNumberLabel.text = "Current: \(currentExpression)"
-    }
-    
     @IBAction func operationButtonTapped(_ sender: UIButton) {
         guard let buttonText = sender.titleLabel?.text else { return }
         
@@ -132,10 +129,19 @@ class BrokenCalculatorVC: UIViewController {
     }
 
     @IBAction func clearButtonTapped(_ sender: UIButton) {
-        currentExpression = ""
-        currentNumber = 0
-        currentNumberLabel.text = "Current: 0"
- 
+        let alert = UIAlertController(title: "Clear Current Input",
+                                      message: "Are you sure you want to clear the current input?",
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Clear", style: .destructive, handler: { [weak self] _ in
+            guard let self = self else { return }
+            self.currentExpression = ""
+            self.currentNumber = 0
+            self.currentNumberLabel.text = "Current: 0"
+        }))
+        
+        present(alert, animated: true, completion: nil)
     }
     
     private func isValidExpression(_ expression: String) -> Bool {
@@ -204,8 +210,18 @@ class BrokenCalculatorVC: UIViewController {
     }
 
     @IBAction func resetButtonTapped(_ sender: UIButton) {
-        currentLevelIndex = 0
-        setupGame()
+        let alert = UIAlertController(title: "Reset Game",
+                                      message: "Are you sure you want to reset the game? This will restart from the first level.",
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Reset", style: .destructive, handler: { [weak self] _ in
+            guard let self = self else { return }
+            self.currentLevelIndex = 0
+            self.setupGame()
+        }))
+        
+        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func btnBack(_ sender: Any) {

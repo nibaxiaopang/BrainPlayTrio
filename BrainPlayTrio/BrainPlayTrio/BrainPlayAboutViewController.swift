@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutVC: UIViewController {
+class BrainPlayAboutViewController: UIViewController {
 
     //MARK: - Declare IBOutlets
     

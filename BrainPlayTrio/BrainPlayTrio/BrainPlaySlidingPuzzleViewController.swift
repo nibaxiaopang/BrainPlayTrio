@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SlidingPuzzleVC: UIViewController {
+class BrainPlaySlidingPuzzleViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var gameBoardView: UIView! // Game board container
@@ -189,7 +189,7 @@ class SlidingPuzzleVC: UIViewController {
     }
 }
 
-extension SlidingPuzzleVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension BrainPlaySlidingPuzzleViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return gridSize * gridSize
     }

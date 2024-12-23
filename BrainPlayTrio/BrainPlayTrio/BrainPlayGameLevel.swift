@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: - GameLevel Model
-struct GameLevel {
+struct BrainPlayGameLevel {
     let targetNumber: Int
     let allowedButtons: [UIButton]
     let timer: Int

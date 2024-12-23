@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Utils {
+class BrainPlayAlterUtils {
     static func showAlert(title: String, message: String, from viewController: UIViewController) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
